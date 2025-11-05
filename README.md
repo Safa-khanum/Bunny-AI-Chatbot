@@ -6,8 +6,9 @@ Quick chatbot using streamlit, gemini api and ngrok for sharing
 
 1) Install packages:
 ```
-pip install streamlit google-generativeai python-dotenv
+pip install streamlit google-generativeai python-dotenv ngrok
 ```
+*Mac users: Use `pip3` instead of `pip` if needed*
 
 2) Get your gemini api key from https://makersuite.google.com/app/apikey
 
@@ -17,6 +18,7 @@ pip install streamlit google-generativeai python-dotenv
 ```
 streamlit run app.py
 ```
+*Mac users: Use `python3 -m streamlit run app.py` if the above doesn't work*
 
 ## Make it interesting
 
