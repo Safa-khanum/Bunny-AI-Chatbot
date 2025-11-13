@@ -73,14 +73,17 @@ This project demonstrates how a simple AI chatbot can be turned into an engaging
 
 On Localhost:
 
+
 <img width="1919" height="950" alt="Screenshot 2025-11-13 181027" src="https://github.com/user-attachments/assets/285fe09f-996b-46cb-94be-a524d7f8fd3f" />
+
 
 On Global(Anyone can access through ngrok Link)
 
+
 <img width="1913" height="941" alt="Screenshot 2025-11-13 181058" src="https://github.com/user-attachments/assets/809a8f5a-e8eb-49db-a3f4-6a12878ab2a2" />
 
-video:
 
+video:
 https://github.com/user-attachments/assets/1113c2b7-11ae-4be4-9ed4-0716aa21f46a
 ---
 
