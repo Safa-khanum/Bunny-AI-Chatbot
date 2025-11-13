@@ -79,6 +79,9 @@ On Global(Anyone can access through ngrok Link)
 
 <img width="1913" height="941" alt="Screenshot 2025-11-13 181058" src="https://github.com/user-attachments/assets/809a8f5a-e8eb-49db-a3f4-6a12878ab2a2" />
 
+video:
+
+https://github.com/user-attachments/assets/1113c2b7-11ae-4be4-9ed4-0716aa21f46a
 ---
 
 ## 🛠️ Installation & Setup
