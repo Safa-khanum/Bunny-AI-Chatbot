@@ -1,48 +1,208 @@
-# GDG BMSIT&M - Simple Chatbot with Gemini
+# 🐰 Bunny AI Chatbot
 
-Quick chatbot using streamlit, gemini api and ngrok for sharing
+A customizable and aesthetically designed chatbot built using Streamlit, Google Gemini API, and ngrok to enable both local and global access. The application provides an interactive chat interface powered by Gemini’s language model while maintaining a smooth and responsive frontend built with Streamlit. It runs seamlessly on localhost, within the same network, or publicly through ngrok, making it easy to share and test across different devices.
 
-## Setup
-
-1) Install packages:
-```
-pip install streamlit google-generativeai python-dotenv ngrok
-```
-*Mac users: Use `pip3` instead of `pip` if needed*
-
-2) Get your gemini api key from https://makersuite.google.com/app/apikey
-
-3) Put your api key in the `.env` file
-
-4) Run it:
-```
-streamlit run app.py
-```
-*Mac users: Use `python3 -m streamlit run app.py` if the above doesn't work*
-
-## Make it interesting
-
-The basic version just talks normally. But you can make it act like different characters!
-
-In `app.py`, comment out line 27 and uncomment lines 30-32 to make it a pirate bot.
-
-Try changing the system_prompt to make it:
-- A cooking chef
-- A fitness trainer  
-- Shakespeare
-- Whatever you want
-
-## Share with friends
-
-Want others to try your bot? Use ngrok:
-
-1) Download ngrok from ngrok.com
-2) Run `ngrok http 8501` in a new terminal
-3) Share the https link with anyone
-
-Now your friends can chat with your custom AI from any of their devices enjoyyy : )
+This project began at the GDG BMSIT&M chatbot workshop, where foundational skills like API integration and Streamlit basics were learned. I later expanded with custom UI, floating animations, avatars, and chat management features to create a polished and aesthetic chatbot experience.
 
 ---
 
-Built by [@DevAdy](https://github.com/DevAdy)  
-Connect with me [linktr.ee/aditya.b.career](https://linktr.ee/aditya.b.career)
+## 🚀 Overview
+
+Bunny AI Chatbot is a lightweight, web-based conversational interface featuring:
+
+* Gemini AI–powered responses
+* Aesthetic background with animated floating elements
+* User and bot avatars
+* Message timestamps
+* Chat history stored in the session
+* Options to clear and download chat history
+* Capability to run locally, on LAN, or globally via ngrok
+
+This project demonstrates how a simple AI chatbot can be turned into an engaging and visually appealing interactive application.
+
+---
+
+## ✨ Features
+
+### **1. Gemini AI Integration**
+
+* Uses Google Gemini (2.0 Flash) model for generating conversational responses.
+* API key loaded securely using `.env`.
+
+### **2. Aesthetic UI Enhancements**
+
+* Soft gradient background
+* Animated floating emojis
+* Clean, modern typography
+* Distinct chat bubbles for the user and bot
+* Readable black text for bot messages
+
+### **3. Chat Interface**
+
+* User and bot profile icons
+* Timestamped messages
+* Session-based chat history
+* Automatic re-rendering after each message
+
+### **4. Sidebar Utilities**
+
+* **Clear Chat** — resets entire conversation
+* **Download Chat History**
+
+  * `.txt` format
+  * `.json` format
+
+### **5. Multiple Deployment Options**
+
+* **Localhost** (default Streamlit server)
+* **Local Network Access** (LAN)
+* **Global access via ngrok** (secure temporary URL)
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── app.py
+├── .env
+├── requirements.txt  (optional)
+└── README.md
+```
+## 📸 Preview
+
+On Localhost:
+
+<img width="1919" height="950" alt="Screenshot 2025-11-13 181027" src="https://github.com/user-attachments/assets/285fe09f-996b-46cb-94be-a524d7f8fd3f" />
+
+On Global(Anyone can access through ngrok Link)
+
+<img width="1913" height="941" alt="Screenshot 2025-11-13 181058" src="https://github.com/user-attachments/assets/809a8f5a-e8eb-49db-a3f4-6a12878ab2a2" />
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1. Install Dependencies
+
+```bash
+pip install streamlit google-generativeai python-dotenv ngrok
+```
+
+(Mac users may use `pip3` if required.)
+
+---
+
+### 2. Obtain Gemini API Key
+
+Generate your API key from:
+
+👉 [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
+
+---
+
+### 3. Create `.env` File
+
+In the project directory:
+
+```
+GEMINI_API_KEY=your_api_key_here
+```
+
+⚠ Ensure there are **no spaces** before or after the `=` sign.
+
+---
+
+### 4. Run the Application
+
+```bash
+streamlit run app.py
+```
+
+Your local URL will be:
+
+[http://localhost:8501/](http://localhost:8501/)
+
+---
+
+## 🌐 Sharing Your Chatbot
+
+### **Local Network Access**
+
+Devices on the same Wi-Fi can access the chatbot using your local IP:
+
+```
+http://<your-ip-address>:8501/
+```
+
+To find your IP:
+
+* Windows: `ipconfig`
+* Mac/Linux: `ifconfig`
+
+---
+
+### **Global Access via ngrok**
+
+1. Install and configure ngrok
+2. Run your app:
+
+   ```
+   streamlit run app.py
+   ```
+3. In a separate terminal:
+
+   ```
+   ngrok http 8501
+   ```
+4. Share the **https** URL generated by ngrok
+
+Anyone worldwide can access your chatbot using that link.
+
+---
+
+## 📚 What Was Learned (Based on GDG Workshop)
+
+This project builds upon concepts learned during the GDG BMSIT&M chatbot workshop:
+
+* How to use Streamlit for web interfaces
+* Reading environment variables
+* Calling and configuring Gemini API
+* Basic UI handling
+* Using ngrok to make local projects publicly accessible
+
+---
+
+## 🔧 Custom Improvements Added
+
+Enhancements implemented beyond the original tutorial:
+
+* Aesthetic pastel UI
+* Animated floating emoji background
+* Cute bunny theme with avatars
+* Improved chat bubble design
+* Black text color for improved readability
+* Sticky footer
+* Chat history persistence
+* Chat download options (txt & json)
+* Timestamp support
+* Cleaned and modularized styling
+* Error handling for missing API keys
+
+These improvements transform a basic console-like chatbot into a polished, user-friendly, visually appealing application.
+
+---
+
+## 🧑‍💻 Author
+
+**Safakhanum**
+Built with personal UI enhancements and aesthetic design improvements.
+
+---
+
+## ❤️ Acknowledgment
+
+This project was originally inspired by and learned from the **GDG BMSIT&M Simple Chatbot Workshop**.
+The final version includes significant custom styling, UI edits, added features, and expanded functionality.
+
+---
